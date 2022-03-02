@@ -1,14 +1,17 @@
+import { ShoppingPage } from '../component-patterns/pages/ShoppingPage';
 interface Route {
     to: string;
     path: string;
     name: string;
+    Component?: () => JSX.Element;
 }
 
 export const routes: Route[] = [
     {
         to: '/home',
         path: 'home',
-        name: 'Home'
+        name: 'Shop',
+        Component: ShoppingPage
     },
     {
         to: '/about',
