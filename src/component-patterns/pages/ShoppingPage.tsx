@@ -25,9 +25,9 @@ export const ShoppingPage = () => {
               reset
             }) => (
               <>
-                <ProductImage className="custom-image" />
-                <ProductTitle title='Custom title' className="text-bold"/>
-                <ProductButtons className="custom-buttons"/>
+                <ProductImage />
+                <ProductTitle title='Custom title' />
+                <ProductButtons />
                 <button onClick={reset}>Reset</button>
                 <button onClick={()=>increaseBy(-2)}>-2</button>
                 {
