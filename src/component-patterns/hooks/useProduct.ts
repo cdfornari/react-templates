@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
-import { Product, InitialValues } from '../interfaces/productInterfaces';
+import { InitialValues } from '../interfaces/productInterfaces';
 
 interface usePorductArgs {
-    product: Product;
     initialValues?: InitialValues;
 }
 
-export const useProduct = ({product,initialValues}: usePorductArgs) => {
+export const useProduct = ({initialValues}: usePorductArgs) => {
     const [counter, setCounter] = useState<number>(initialValues?.count || 0);
     const isMounted = useRef(false);
     useEffect(() => {
