@@ -43,7 +43,7 @@ export const FormikComponents = () => {
             >
                 {
                     formik => (
-                        <Form>
+                        <Form noValidate>
                             <label htmlFor='firstName'>First Name</label>
                             <Field name='firstName' type='text'/>
                             <ErrorMessage name='firstName'component='span' />

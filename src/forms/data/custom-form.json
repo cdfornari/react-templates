@@ -1,0 +1,70 @@
+[
+    {
+        "type": "text",
+        "name": "firstName",
+        "placeholder": "enter your name",
+        "label": "First Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "minLength",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "name": "lastName",
+        "placeholder": "enter your last name",
+        "label": "Last Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "example@email.ex",
+        "label": "Email Address",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "email"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "options": [
+            {
+                "label": "Mortal Kombat",
+                "id": 1
+            },
+            {
+                "label": "Call of Duty",
+                "id": 2
+            },
+            {
+                "label": "Resident Evil",
+                "id": 3
+            } 
+        ],
+        "validations": [
+            {
+                "type": "required"
+            }
+        ]
+    }
+]

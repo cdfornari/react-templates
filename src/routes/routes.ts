@@ -1,4 +1,5 @@
-import {RegisterPage,FormikBasicPage,FormikYupPage,FormikComponents,FormikAbstractation} from '../forms/pages'
+import {RegisterPage,FormikBasicPage,FormikYupPage,FormikComponents,FormikAbstractation, RegisterFormikPage} from '../forms/pages'
+import { DynamicFormikPage } from '../forms/pages/DynamicFormikPage';
 
 interface Route {
     to: string;
@@ -37,6 +38,18 @@ export const routes: Route[] = [
         path: 'formik-abstractation',
         name: 'Formik Abstractation',
         Component: FormikAbstractation
+    },
+    {
+        to: '/register-formik',
+        path: 'register-formik',
+        name: 'Register Formik',
+        Component: RegisterFormikPage
+    },
+    {
+        to: '/dynamicForm-formik',
+        path: 'dynamicForm-formik',
+        name: 'Dynamic Form with Formik',
+        Component: DynamicFormikPage
     },
     {
         to: '/about',

@@ -9,7 +9,7 @@ interface Props {
 }
 
 export const TextInput = ({label, ...props}: Props) => {
-  const [field,meta] = useField(props);
+  const [field/*,meta*/] = useField(props);
   return (
     <>
       <label htmlFor={props.id || props.name}>{label}</label>
